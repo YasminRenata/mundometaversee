@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+hr {
+	display: none;
+}
+
+img {
+	border: none;
+}
+
+body {
+	background: #233a53;
+
+}
+
+#wrapper {
+	width: 900px;
+	margin: 0 auto;
+}
+
+#wrapper h1 {
+	font: 24px Monteserrat, sans-serif;
+	color: #FFF;
+	margin: 20px;
+
+}
+
+#wrapper input.botaoSair, button.botaoSair {
+	font: 14px Arial, Tahoma, Verdana, Sans-serif;
+	float: right;
+	background: rgb(18, 134, 249);
+	border: none;
+	border-radius: 8px;
+	color: #FFF;
+	padding: 10px;
+	margin: 20px 15px 0 4px;
+	cursor: pointer;
+	width: 80px;
+	text-decoration: none;
+}
+
+#wrapper input.botaoSair, button.botaoSair:hover {
+	background: rgba(84, 136, 247, 0.829);
+}
+
+
+#header h1 {
+	margin: 35px 0 0 0;
+	text-align: center;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+
+.port_excl {
+
+	color: rgba(84, 136, 247, 0.829);
+
+
+}
+
+#destaque {
+	clear: both;
+	padding: 5px 2px;
+	position: relative;
+}
+
+#destaque h1 {
+	font: 23px Monteserrat, sans-serif;
+	color: rgb(231, 231, 240);
+	margin: 20px 0;
+}
+
+
+#destaque iframe {
+
+	border-radius: 8px;
+}
+
+#event_01 {
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+#event_01 p {
+
+	font: 20px Monteserrat, sans-serif;
+	color: #FFF;
+	font-size: 16px;
+	padding: 5px;
+	margin: 0 0 10px;
+}
+
+#sevent_01 h1 {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: italic;
+	color: rgb(18, 134, 249);
+	font-size: 20px;
+	padding: 15px 0 20px;
+	margin: 5px;
+}
+
+.links_uteis {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+
+}
+
+.links_uteis img {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	height: auto;
+	border-radius: 6px;
+	margin: 10px auto;
+
+}
+
+.links_uteis ul li {
+	list-style: none;
+	padding: 10px;
+}
+
+
+.links_uteis ul li a {
+	font: 14px Verdana, "Trebuchet Ms", Arial Sans-serif;
+	text-decoration: none;
+	color: rgb(139, 138, 141);
+	list-style: none;
+}
+
+span.detail {
+	font-weight: lighter;
+	padding: 5px 0;
+	color: #FFF;
+	font-size: medium;
+
+}
+
+.links_uteis ul li a:hover {
+	font: 14px Verdana, "Trebuchet Ms", Arial Sans-serif;
+	text-decoration: none;
+	color: rgb(152, 125, 235);
+	text-decoration: underline;
+}
+
+#event_01 iframe {
+	border-radius: 8px;
+}
+
+#video video {
+	border-radius: 8px;
+	max-width: 100%;
+	;
+}
+
+#img_meta img {
+	height: 350px;
+	border-radius: 8px;
+	text-align: center;
+
+}
+
+#nuvem_tags img {
+	border-radius: 8px;
+	margin: 10px auto;
+}
+
+#footer {
+	clear: both;
+	padding: 5px;
+	margin: 14px 0 14px 0;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+#footer a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+#footer a:hover {
+	text-decoration: underline;
+}
+
+#footer address {
+	font: 16px Verdana, Arial, Tahoma, Sans-serif;
+	color: #FFF;
+	float: left;
+	margin: 0 0 10px;
+}
+
+#footer address p {
+	float: left;
+	position: relative;
+	padding: 8px 0 0 0;
+}
+
+strong.tel, strong.email {
+	font: 16px Verdana, Arial, Tahoma, Sans-serif;
+	color: #FFF;
+    display: flex;
+	flex-direction: column;
+
+}
+
+@media screen and (max-width:480px) {
+
+	#wrapper {
+		width: 85%;
+		margin: 0 auto;
+	}
+
+	#header {
+		max-width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	#header h1 img {
+		display: flex;
+		text-align: center;
+		flex-direction: column;
+		align-items: center;
+		width: 85%;
+		height: auto;
+		margin: 0 auto;
+	}
+
+	#wrapper input.botaoSair, button.botaoSair {
+
+		margin: 45px 15px 0 4px;
+
+	}
+
+	#menu ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: auto;
+		margin: 0 auto;
+	}
+
+	#header #menu ul li a {
+		font-size: 22px;
+		font-family: 'Montserrat', sans-serif;
+		text-align: center;
+	}
+
+	#header h1 {
+		margin: 35px 0 0 0;
+		text-align: center;
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+	}
+
+	.port_excl {
+		font-size: 28px;
+		text-align: center;
+
+	}
+
+	#destaque iframe {
+		width: 90%;
+		height: auto;
+	}
+
+	#destaque h1 {
+		font: 22px Monteserrat, sans-serif;
+	}
+
+	#event_01 iframe {
+		width: 90%;
+		height: auto;
+
+	}
+
+	#event_01 p {
+
+		font: 20px Monteserrat, sans-serif;
+		color: #FFF;
+		font-size: 16px;
+		padding: 5px;
+		margin: 0 0 10px;
+	}
+
+	#sevent_01 h1 {
+		font-size: 20px;
+		text-align: center;
+	}
+
+	#video video {
+		width: 90%;
+		height: auto;
+
+	}
+	.links_uteis img{
+		width: 90%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 5px 0 0 -4px ;
+	
+	}
+	
+.links_uteis ul li a {
+	font: 14px Verdana, "Trebuchet Ms", Arial Sans-serif;
+	margin: 5px 0 0 -5px;
+
+}
+
+span.detail {
+	font-size: 20px;
+}
+
+#img_meta img {
+	width: 90%;
+	height: auto;
+
+}
+
+#nuvem_tags img {
+	width: 90%;
+	height: auto;
+}
+#footer {
+	width: 380px;
+	height: auto;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	margin: 4px;
+	padding: 5px;
+}
+
+#footer address {
+	width: 90%;
+	height: auto;
+	padding: 5px;
+	font: 15px Arial, Tahoma, Verdana, Sans-serif;
+	margin: 20px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+#footer p {
+	font: bold 20px Arial, Tahoma, Verdana, Sans-serif;
+}
+
+#footer strong.tel {
+	display: flex;
+	flex-direction: column;
+	font: 17px Arial, Tahoma, Verdana, Sans-serif;
+}
+
+strong.email {
+	display: flex;
+	flex-direction: column;
+	font: 16px Verdana, Arial, Tahoma, Sans-serif;
+
+}
+
+
+}

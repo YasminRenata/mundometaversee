@@ -1,0 +1,472 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+hr {
+	display: none;
+}
+
+img {
+	border: none;
+}
+
+body {
+	background: #071b30 no-repeat;
+}
+
+#wrapper {
+	width: 900px;
+	margin: 0 auto;
+}
+
+#header h1 {
+	margin: 20px 0;
+	float: left;
+}
+
+#header #menu {
+	float: right;
+	margin: 30px 0 0;
+}
+
+#header #menu ul li {
+	list-style: none;
+	display: inline;
+}
+
+#header #menu ul li a {
+	font: 18px Verdana, "Trebuchet Ms", Arial Sans-serif;
+	text-decoration: none;
+	color: rgb(241, 239, 247);
+	float: left;
+	padding: 10px;
+}
+
+#header #menu ul li a:hover {
+	background: rgb(35, 79, 137);
+	border-radius: 10px;
+	;
+}
+
+#destaque {
+	clear: both;
+	height: 406px;
+	background: url(../images/faleconosco.jpg)no-repeat;
+	border-radius: 10px 10px;
+	padding: 10px;
+	position: relative;
+}
+
+#destaque p {
+	font: 20px Verdana, Arial, Tahoma, Sans-serif;
+	margin: 340px 0 0 30px;
+	color: hsl(180, 9%, 96%);
+}
+
+#destaque a.linkDetalhe {
+	font: 14px Verdana, Arial, Tahoma, Sans-serif;
+	color: #000;
+	background: url(../images/setinhadir-black.gif)no-repeat right center;
+	text-decoration: none;
+	padding: 0 15px 0 0;
+	position: absolute;
+	bottom: 20px;
+}
+
+#destaque a.linkDetalhe:hover {
+	text-decoration: underline;
+}
+
+#chamadas article {
+	margin: 8px 0;
+	width: 889px;
+	padding: 5px 5px 0 5px;
+	float: left;
+
+}
+
+#faleconosco img {
+	border-radius: 10px 10px;
+}
+
+#chamadas article h3 {
+	font: 25px Tahoma Verdana, Arial, Sans-serif;
+	color: rgb(246, 246, 246);
+	margin: 10px 0 10px;
+	padding: 5px 5px 0 5px;
+}
+
+#login #form1 fieldset {
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	color: rgb(245, 244, 248);
+	font-weight: bold;
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 15px;
+	margin-left: 10px;
+	font: 14px Verdana, Arial, Tahoma, Sans-serif;
+}
+
+#login #form1 fieldset legend {
+	margin-bottom: 8px;
+	font-size: 20px;
+	width: 250px;
+}
+
+#btn_enviar_email {
+	cursor: pointer;
+	padding: 15px;
+
+}
+
+#login #form1 fieldset input, #btn_enviar_email {
+	background-color: rgb(85, 156, 243);
+	margin-top: 10px;
+	padding: 15px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	font: 14px Verdana, Arial, Tahoma, Sans-serif;
+	color: #FFF;
+	margin-bottom: 6px;
+	font-size: 16px;
+	outline: none;
+	border: none;
+
+}
+
+
+#btn_enviar_email {
+	font-weight: 400;
+	border-radius: 8px;
+	width: 60%;
+	font-size: 18px;
+	background: transparent;
+	border: 2px solid #FFF;
+
+
+}
+
+#btn_enviar_email:hover {
+	background-color: rgb(11, 63, 128);
+
+}
+.message{
+	padding: 19px 60px;
+	position: fixed;
+	top: 20px;
+	right: 105px;
+	background-color: aqua;
+	border-radius: 3px;
+	color:#FFF;
+	animation: slidein 0.2s cubic-bezier(0.25,0.46,0.45,0.94)both;
+}
+@keyframes slindein{
+	0%{
+		transform: translateX(1000px);
+		opacity: 0;
+	}
+	100%{
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+#login #form1 fieldset #textfield2 {
+	background-color: rgb(85, 156, 243);
+	font: 14px Verdana, Arial, Tahoma, Sans-serif;
+	color: #FFF;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	padding: 8px;
+
+}
+
+#login #form1 fieldset #input {
+	max-width: 90%;
+
+
+}
+
+#footer {
+	border-top: 1px #FFF;
+	clear: both;
+	padding: 5px;
+	margin: 4px 0 4px 0;
+}
+
+#footer a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+#footer a:hover {
+	text-decoration: underline;
+}
+
+#footer address {
+	font: 14px Verdana, Arial, Tahoma, Sans-serif;
+	color: #FFF;
+	float: left;
+	margin: 0 0 10px;
+}
+
+#footer address p {
+	float: left;
+	position: relative;
+	margin-right: 165px;
+	padding: 8px 0 0 0;
+}
+
+#minimenu {
+	font: 14px Verdana, Arial, Tahoma, Sans-serif;
+	float: right;
+	margin: 0 0 10px;
+}
+
+#minimenu li {
+	list-style: none;
+	float: left;
+	padding: 0 7px 0;
+	color: #FFF;
+	margin: 0 2px 0;
+}
+
+strong.tel, strong.email {
+	font: 14px Verdana, Arial, Tahoma, Sans-serif;
+	color: #FFF;
+	float: right;
+	clear: right;
+	
+}
+
+.span-required {
+    font-size: 14px;
+    margin: 3px 0 0 1px;
+	font-weight: 400px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: brown;
+    display: none;
+}
+
+div.insta_acesso {
+	display: flex;
+	flex-direction: row;
+	min-width: 90%;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	padding: 20px;
+	justify-content: center;
+}
+
+.text_nos_siga {
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	color: #b0dcf3;
+	text-transform: uppercase;
+
+
+}
+
+a.meta_arroba {
+	font-size: 16px;
+	color: rgb(14, 126, 237);
+	margin: 0 5px;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: none;
+
+
+}
+
+ a.meta_arroba:hover {
+	text-decoration: underline;
+}
+
+
+.img_insta {
+	margin: 0 2px;
+}
+
+@media screen and (max-width:480px) {
+	#wrapper {
+		width: 85%;
+		margin: 0 auto;
+	}
+
+	#header {
+		max-width: 100%;
+		display: flex;
+		height: 75%;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	#header h1 img {
+		display: flex;
+		text-align: center;
+		flex-direction: column;
+		align-items: center;
+		width: 80%;
+		height: auto;
+		margin: 0 auto;
+	}
+
+
+	#menu ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: auto;
+		margin: 0 auto;
+	}
+
+	#header #menu ul li a {
+		font-size: 22px;
+		font-family: 'Montserrat', sans-serif;
+		text-align: center;
+	}
+
+	#destaque {
+		width: 98%;
+		display: flex;
+		height: auto;
+		background-color: aqua;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		border-radius: 10px 10px 8px 9px;
+		background: url(../images/faleconosco_mobile.jpg)top right no-repeat;
+		padding: 5px 10px;
+	}
+
+	#destaque p {
+		font: 15px Verdana, Arial, Tahoma, Sans-serif;
+		margin: 95px 0 0 0;
+		text-align: left;
+		color: rgb(248, 246, 244);
+		font-weight: 800;
+	}
+
+	#login #form1 {
+		max-width: 85%;
+		height: auto;
+
+	}
+
+	#login #form1 fieldset legend {
+
+		font: 15px Verdana, Arial, Tahoma, Sans-serif;
+	}
+
+	#login #form1 fieldset #name, #login #form1 fieldset #email, #login #form1 fieldset #textfield2 {
+		width: 98%;
+
+	}
+
+	#btn_enviar_email {
+		width: 100%;
+	}
+
+	#faleconosco img {
+		height: 127px;
+		width: 415px;
+		margin: 0 auto;
+
+	}
+
+	#footer {
+		width: 380px;
+		height: auto;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		margin: 4px;
+		padding: 5px;
+	}
+
+	#footer address {
+		width: 90%;
+		height: auto;
+		padding: 5px;
+		font: 15px Arial, Tahoma, Verdana, Sans-serif;
+		margin: 20px 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	#footer p {
+		font: bold 20px Arial, Tahoma, Verdana, Sans-serif;
+	}
+
+	#footer ul#minimenu {
+		font: 15px Arial, Tahoma, Verdana, Sans-serif;
+		width: 460px;
+		text-align: center;
+		margin: 0 4px;
+
+	}
+
+	#footer strong.tel {
+		display: flex;
+		font: 17px Arial, Tahoma, Verdana, Sans-serif;
+		flex-direction: row;
+		margin: 15px;
+	}
+
+	strong.email {
+		font: 16px Verdana, Arial, Tahoma, Sans-serif;
+		max-width: 100%;
+		margin: 0 0 10px 0;
+	}
+	.span-required {
+		font-size: 12px;
+		margin: 3px 0 0 1px;
+		font-family: Arial, Helvetica, sans-serif;
+		color: brown;
+		display: none;
+	}
+	div.insta_acesso {
+		width: 95%;
+		padding: 10px;
+
+
+	}
+
+	.text_nos_siga {
+		font-size: 13px;
+
+	}
+
+	a.meta_arroba {
+		font-size: 13px;
+		color: rgb(14, 126, 237);
+		margin: 0 5px;
+		text-decoration: none;
+
+	}
+
+	a.meta_arroba:hover {
+		text-decoration: underline;
+	}
+
+
+	.img_insta {
+		margin: 0 2px;
+		width: 20px;
+	}
+
+
+
+}

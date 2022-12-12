@@ -1,0 +1,175 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <!--Configuração de media query-->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
+    <link href="/public/assets/style_fale_conosco.css" rel="stylesheet"/>
+  <link rel="icon" href="./images/icon2.ico" type="image/x-icon" />
+  <title>METAVERSE</title>
+</head>
+
+<body>
+  <section id="wrapper">
+    <header id="header">
+      <h1><a href="index.html" title="Metaverse"><img src="images/logo_metarverse_.png" alt="Metaverse" /></a></h1>
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html" title="Home" class="active">Home</a></li>
+          <li><a href="saiba-mais.html" title="Saiba mais">Saiba mais</a></li>
+          <li><a href="ux.html" title=" User Experience"> User Experience</a></li>
+          <li><a href="mercado.html" title="Mercado">Mercado</a></li>
+          <li><a href="fale-conosco.html" title="Fale Conosco">Fale Conosco</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+    <article id="destaque">
+      <p>Quer saber mais informações? <br />
+        Entre em contato conosco e venha saber mais sobre esse novo universo digital!
+      </p>
+    </article>
+    <section id="chamadas">
+      <article>
+        <h3>Preencha os campos abaixo : </h3>
+
+      </article>
+    </section>
+    <hr />
+    <article id="login">
+      <form id="form1" name="form1" method="post" action="https://api.staticforms.xyz/submit">
+        <input type="hidden" name="accessKey" value="0adfee2d-8ff7-4ddf-a96e-fc99335bfeae" />
+        <input type="hidden" name="redirectTo" value="https://www.mundometaverse.com.br/fale-conosco.html" />
+        <fieldset>
+          <legend>Nome</legend>
+          <input type="text" name="name" id="name" size="49" class="inputs required" oninput="nameValidate()"
+            autocomplete="off" required />
+          <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
+        </fieldset>
+
+        <fieldset>
+          <legend>E-mail</legend>
+          <input type="email" name="email" id="email" size="49" class="inputs required"
+            placeholder="Digite seu email..." oninput="emailValidate()" autocomplete="off" required />
+          <span class="span-required">Digite um email válido</span>
+        </fieldset>
+        <fieldset>
+          <legend>Mensagem</legend>
+          <textarea name="message" cols="60" id="textfield2" placeholder="Digite sua mensagem..." required></textarea>
+        </fieldset>
+
+        <fieldset>
+          <!-- <input name="buttom" type="submit" id="buttom" value="Enviar" /> -->
+          <button href ="fale-conosco.html" onclick="abrirAlerta()" type="submit" class="btn_action" id="btn_enviar_email">Enviar</button>
+          <div class="alert"></div>
+        </fieldset>
+      </form>
+    </article>
+    <hr />
+    <section id="faleconosco">
+      <img src="images/Fale-conosco.jpg" width="900" alt="Fale Conosco" />
+    </section>
+    <hr />
+    <footer id="footer">
+      <address>
+        <strong>
+          <Main>METAVERSE - A TECNOLOGIA DO FUTURO</Main>
+        </strong><br />
+        Alameda Martins, 257<br />
+        Planalto Paulista - São Paulo, SP<br />
+      </address>
+      <ul id="minimenu">
+        <li><a href="mapa-do-site.html" title="Localize informações">Mapa do site </a> |</li>
+        <li><a href="politica-de-privacidade.html" title="Política de privacidade">Política de
+            privacidade </a> |</li>
+        <li><a href="https://www.fecap.br/graduacao/analise-e-desenvolvimento-de-sistemas/"
+            title="Conheça os curso ADS da Fecap" target="_blank">Fecap</a> |</li>
+        <li><a href="sobre-nos.html" title="Conheça mais sobre nós">Sobre nós</a></li>
+      </ul>
+      <strong class="tel">11- 7894-2596</strong>
+      <strong class="email"><a href="mailto:metaversedoubt@gmail.com">metaversedoubt@gmail.com</a></strong>
+    </footer>
+    <div class="insta_acesso">
+      <h2 class="text_nos_siga">Nos siga no Instagram: <a class="meta_arroba"href="https://www.instagram.com/metaverse_doubt/?igshid=YmMyMTA2M2Y%3D" target="_blank">@metaverse_doubt</a></h2>
+      <a  href="https://www.instagram.com/metaverse_doubt/?igshid=YmMyMTA2M2Y%3D" target="_blank"><img class="img_insta" width="20" src="images/icon-instagram.png" alt="Nos siga no Instagram" /></a>      
+    </div>
+  </section>
+</body>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+  const form = document.getElementById('form');
+  const campos = document.querySelectorAll('.required');
+  const spans = document.querySelectorAll('.span-required');
+  const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    nameValidate();
+    emailValidate();
+    mainPasswordValidate();
+    comparePassword();
+  });
+
+  function abrirAlerta(){
+    swal({
+      title: "Obrigada",
+      text: "Messagem Enviada Com sucesso",
+       icon: "success",
+      });
+  }
+  function setError(index) {
+    campos[index].style.border = '2px solid #e63636';
+    spans[index].style.display = 'block';
+  }
+
+  function removeError(index) {
+    campos[index].style.border = '';
+    spans[index].style.display = 'none';
+  }
+
+  function nameValidate() {
+    if (campos[0].value.length < 3) {
+      setError(0);
+    }
+    else {
+      removeError(0);
+    }
+  }
+
+  function emailValidate() {
+    if (!emailRegex.test(campos[1].value)) {
+      setError(1);
+    }
+    else {
+      removeError(1);
+    }
+  }
+
+  function mainPasswordValidate() {
+    if (campos[2].value.length < 8) {
+      setError(2);
+    }
+    else {
+      removeError(2);
+      comparePassword();
+    }
+  }
+
+  function comparePassword() {
+    if (campos[2].value == campos[3].value && campos[3].value.length >= 8) {
+      removeError(3);
+    }
+    else {
+      setError(3);
+    }
+  }
+
+</script>
+
+</html>
